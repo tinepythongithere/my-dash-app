@@ -6,7 +6,7 @@ import pandas as pd
 import dash_daq as daq
 import dash_extensions as de
 
-df = pd.read_excel('\data\db.xlsx', index_col='Code Chauffeur')
+df = pd.read_excel('data//db.xlsx', index_col='Code Chauffeur')
 df_unique = df.loc[:,['PRENOM', 'NOM', 'Prenom et Nom', 'TELEPHONE', 'ADRESSE CHAUFFEURS',
        'AGENTS TRANSPORTES', 'ADRESSE EXPERTS', 'CHEF DE BORD', 'VEHICULE',
        'N° CARTE CARBURANT']]
