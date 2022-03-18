@@ -164,4 +164,5 @@ def load_conso(date, ch):
     return list_1, list_2, list_3
 # {'width': '260px', 'height': '300px'}
 if __name__=='__main__':
+    app.title = "Suivi conso carburant"
     app.run_server(debug=True)
