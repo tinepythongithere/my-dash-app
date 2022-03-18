@@ -14,7 +14,7 @@ df_unique = df.loc[:,['PRENOM', 'NOM', 'Prenom et Nom', 'TELEPHONE', 'ADRESSE CH
 df_unique = df_unique.drop_duplicates()
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.MATERIA])
-
+app.title = "Suivi conso carburant"
 server = app.server
 
 liste_chauffeur = dcc.Dropdown(
@@ -164,5 +164,4 @@ def load_conso(date, ch):
     return list_1, list_2, list_3
 # {'width': '260px', 'height': '300px'}
 if __name__=='__main__':
-    app.title = "Suivi conso carburant"
     app.run_server(debug=True)
