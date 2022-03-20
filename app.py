@@ -17,7 +17,7 @@ kilometrage_total = df.groupby("VEHICULE").max("KILOMETRAGE")["KILOMETRAGE"].sum
 consommation_total = df["CONSOMMATION"].sum()
 montant_total_FCFA = df.groupby("VEHICULE").max("MONTANT TOTAL EN FCFA")["MONTANT TOTAL EN FCFA"].sum()
 
-graph_1 = px.bar(df.groupby("VEHICULE").max("KILOMETRAGE"), y=["KILOMETRAGE", "MONTANT TOTAL EN FCFA"])
+graph_1 = px.bar(df.groupby("VEHICULE").max("KILOMETRAGE"), y=["KILOMETRAGE", "MONTANT TOTAL EN FCFA"], text_auto=True)
 df2 = pd.DataFrame(df.groupby("VEHICULE").sum("CONSOMMATION"))
 df2["Plaque"]= df2.index
 graph_2 = px.pie(df2, values="CONSOMMATION", names="Plaque",
