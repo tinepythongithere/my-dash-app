@@ -217,7 +217,7 @@ page_accueil = html.Div(children=[
     ], style={'margin': '15px'}),
 ], style={'background-color' : '#E7E8EE'})
 #_______________________________________________________________________________________________________________________
-content = html.Div(id="page-content", children=[page_1], style=CONTENT_STYLE)
+content = html.Div(id="page-content", children=[], style=CONTENT_STYLE)
 
 app.layout = html.Div([
     dcc.Location(id="url"),
