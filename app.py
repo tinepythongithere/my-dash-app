@@ -161,7 +161,7 @@ app.layout = html.Div([
     [Input("url", "pathname")]
 )
 def render_page_content(pathname):
-    if pathname=="/page-1-ch":
+    if pathname=="/page-1-ch" or pathname=="/":
         return page_1
     elif pathname=="/page-2-carte":
         return html.H1("Page à définir ...", style={"margin-left": "1rem"}, className="text-danger")
