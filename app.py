@@ -50,8 +50,9 @@ sidebar = html.Div(
     [
         dbc.Card(dbc.CardImg(src="assets/RGPH-5.jpg"),
                      style={'width': '80%', 'border': 'solid'}),
+        html.Label("Je suis recencé, je compte"),
         html.Hr(),
-        html.H3("Menu", className="display-4"),
+        html.H5("Menu"),
         #html.Hr(),
         dbc.Nav(
             [
